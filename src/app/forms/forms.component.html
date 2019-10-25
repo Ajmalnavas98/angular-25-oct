@@ -1,0 +1,59 @@
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+
+      
+      
+        <div class="form-group">
+      
+          <label>FIRST NAME</label>
+      
+          <input name="firstname" #fullname="ngModel" [(ngModel)]="apiservice.formData.firstname" class="form-control" >
+      
+      
+        </div>
+      
+        <div class="form-group">
+      
+          <label>LASTNAME</label>
+      
+          <input name="lastname" #lastname="ngModel" [(ngModel)]="apiservice.formData.lastname"  class="form-control">
+      
+        </div>
+      
+        <div class="form-row">
+      
+          <div class="form-group col-md-6">
+      
+            <label>EMAIL</label>
+      
+            <input name="email" #email="ngModel" [(ngModel)]="apiservice.formData.email" class="form-control">
+      
+          </div>
+      
+          <div class="form-group  col-md-6">
+      
+            <label>GENDER</label>
+      
+            <input name="gender" #gender="ngModel" [(ngModel)]="apiservice.formData.gender" class="form-control">
+      
+          </div>
+          
+        <div class="form-group">
+      
+                <label>PHONE_NUMBER</label>
+            
+                <input name="phone_number" #phone_number="ngModel" [(ngModel)]="apiservice.formData.phone_number" class="form-control">
+            
+              </div>
+      
+          
+      
+        </div>
+      
+        <div class="form-group">
+      
+          <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">SUBMIT</button>
+      
+        </div>
+      
+      </form>
+        

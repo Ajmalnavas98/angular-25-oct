@@ -1,0 +1,21 @@
+<div class = "styles">
+<h3>Electronics</h3>
+
+ <p>
+    <a >the number of Electronics available in the shop are </a>
+  </p>
+  
+ <div *ngFor="let electrons of electron">
+
+        <h3>
+          <a [title]="electrons.name">
+            {{ electrons.name }}
+          </a>
+        </h3>
+        <p *ngIf="electrons.description">
+                Description: {{ electrons.description }}
+            
+        </p>
+</div>             
+      
+      

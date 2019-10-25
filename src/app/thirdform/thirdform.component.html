@@ -1,0 +1,23 @@
+<label id="example-radio-group-label">Pick your favorite Game</label>
+<mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  [(ngModel)]="favoriteGame">
+  <mat-radio-button class="example-radio-button" *ngFor="let game of Games" [value]="game">
+    {{game}}
+  </mat-radio-button>
+</mat-radio-group>
+<div>Your favorite game is: {{favoriteGame}}</div>
+
+    <mat-form-field>
+        <input matInput type = 'number' placeholder="minimum" [(ngModel)] = "val">
+    </mat-form-field>
+    
+    
+    <mat-form-field>
+        <input matInput type = 'number' placeholder="maximum" [(ngModel)] = "max">
+    </mat-form-field>
+
+    <mat-slider></mat-slider>
+        
+    

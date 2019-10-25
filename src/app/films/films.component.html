@@ -1,0 +1,13 @@
+
+
+<ag-grid-angular
+    #agGrid
+    [enableSorting]="true"
+    [enableFilter]="true"
+    [pagination]="true"
+    style="width: 1400px; height: 1000px;" 
+    class="ag-theme-balham"
+    [rowData]="rowData | async"
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
